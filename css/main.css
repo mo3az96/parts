@@ -744,6 +744,10 @@ html[dir=ltr] .testimonial .mo-rating i {
   margin-left: 8px;
   width: 192px;
 }
+html[dir=ltr] .select-form .select-cont {
+  margin-left: 0;
+  margin-right: 12px;
+}
 @media (max-width: 1199px) {
   .select-form .select-cont {
     width: 18%;
@@ -1068,6 +1072,10 @@ html[dir=ltr] .bootstrap-select .dropdown-toggle .filter-option {
   position: relative;
   margin-right: 24px;
 }
+html[dir=ltr] .lang {
+  margin-right: 0;
+  margin-left: 24px;
+}
 @media (max-width: 992px) {
   .lang {
     position: absolute;
@@ -1327,6 +1335,10 @@ main::before {
   .main-text {
     font-size: 25px;
   }
+}
+html[dir=ltr] .main-text {
+  font-family: bold;
+  text-transform: uppercase;
 }
 
 .main-div {
