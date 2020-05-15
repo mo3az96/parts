@@ -864,6 +864,8 @@ html[dir=ltr] .bootstrap-select .dropdown-toggle .filter-option {
 }
 .bootstrap-select .dropdown-menu .inner {
   max-height: 200px !important;
+  scrollbar-width: thin;
+  scrollbar-color: #b9b9b9 #ededed;
 }
 .bootstrap-select .dropdown-menu .inner::-webkit-scrollbar {
   background-color: #ededed;
