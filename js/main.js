@@ -6,9 +6,11 @@ $(window).on('load', function () {
     });
 });
 $(document).ready(function () {
-    $('select').selectpicker({
-        dropupAuto: false
-    });
+    if ($(window).width() > 767) {
+        $('select').selectpicker({
+            dropupAuto: false
+        });
+    }
     /////////fixed-header/////////
     $(window).scroll(function () {
         if ($(this).scrollTop() >= 40) {
