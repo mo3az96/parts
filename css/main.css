@@ -964,7 +964,7 @@ html[dir=ltr] .mobile-select-cont:after {
   align-items: center;
 }
 .pre-loader img {
-  width: 200px;
+  width: 130px;
   border-radius: 12px;
 }
 @media (max-width: 767px) {
@@ -982,11 +982,11 @@ html[dir=ltr] .mobile-select-cont:after {
   background-color: #c30130;
   border: none;
   overflow: hidden;
-  width: 200px;
+  width: 150px;
   height: 2px;
   -webkit-box-shadow: none;
   box-shadow: none;
-  margin: 30px 0 0 0;
+  margin: 20px 0 0 0;
 }
 @media (max-width: 767px) {
   .pre-loader .progress-bar {
@@ -1315,14 +1315,14 @@ header.header-scroll {
   box-shadow: 0px 0px 10px 0px rgba(38, 38, 38, 0.1);
 }
 header.header-scroll .header {
-  height: 80px;
+  height: 70px;
   align-items: flex-start;
 }
 header.header-scroll .logo img {
-  width: 90px;
+  width: 80px;
 }
 header.header-scroll .mo-user-nav {
-  padding: 30px 0;
+  padding: 25px 0;
 }
 header.header-scroll .drop-down-li .nav-anchor {
   color: #262626;
@@ -1355,7 +1355,7 @@ header.header-scroll .lang-anchor:hover {
   color: #c30130;
 }
 header.header-scroll .mo-navbar {
-  padding: 28px 0;
+  padding: 23px 0;
 }
 header.header-scroll .nav-anchor {
   color: #262626;
@@ -1371,9 +1371,16 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
+}
+main::after {
+  padding-bottom: 40.625%;
+  content: "";
+}
+@media (max-width: 767px) {
+  main::after {
+    display: none;
+  }
 }
 main::before {
   background-color: #1f1f1f;
@@ -1394,6 +1401,7 @@ main::before {
   position: relative;
   z-index: 9;
   font-family: main;
+  display: flex;
 }
 @media (max-width: 767px) {
   .main-text {
@@ -1407,7 +1415,6 @@ html[dir=ltr] .main-text {
 
 .main-div {
   position: relative;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1422,7 +1429,7 @@ html[dir=ltr] .main-text {
   .main-div {
     height: auto;
     flex-direction: column;
-    padding: 150px 0 40px;
+    padding: 150px 15px 40px;
   }
 }
 
@@ -1453,7 +1460,7 @@ html[dir=ltr] .main-text {
   width: 22px;
 }
 .search-button:hover {
-  background-color: #000;
+  background-color: #262626;
 }
 
 footer {
