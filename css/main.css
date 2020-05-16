@@ -1372,15 +1372,7 @@ main {
   background-repeat: no-repeat;
   display: flex;
   position: relative;
-}
-main::after {
-  padding-bottom: 40.625%;
-  content: "";
-}
-@media (max-width: 767px) {
-  main::after {
-    display: none;
-  }
+  height: 650px;
 }
 main::before {
   background-color: #1f1f1f;
@@ -1392,6 +1384,11 @@ main::before {
   left: 0;
   content: "";
   display: block;
+}
+@media (max-width: 767px) {
+  main {
+    height: auto;
+  }
 }
 
 .main-text {
